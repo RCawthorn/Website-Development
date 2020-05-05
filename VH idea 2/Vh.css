@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+  body {
+    background:white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  /* Styling for link buttons on top right of the page. To have them in a list and also coloured overlay borders */
+  nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+     
+    float:right;
+    list-style: none;
+    display: flex;
+    color: mediumspringgreen;
+  }
+
+  li {  
+    margin-right: 3rem;
+  
+  }
+ 
+  
+  /* These are the hyperlinks css for the nav bar - Home, about, locations and blog. Although colour change hover isnt working */
+ 
+  a:link {
+    color: mediumspringgreen;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(255, 105, 180);
+    text-decoration: none;
+    border: 2px solid  mediumspringgreen;
+    padding: 0.3rem 0.3rem;
+    border-radius: 15px;
+  }
+  
+  a:visited {
+    color:  mediumspringgreen;
+    text-decoration: none;
+  }
+  
+
+/* This is the css for H2 - the font size, colour and position */
+  
+  h2 {
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 23px;
+  }
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+  
+/* This is the css for the header/Van heroes header image and nav bar */
+
+  .inner, #wrap {
+    width:100%;
+    margin:auto;
+    background-color:#595959 ;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  div.container {
+    
+        display:inline-block;
+        
+        
+      }
+ 
+  
+
+ /* To help adjust the web app to suit the users screeen size */
+  
+  @media screen and (max-width: 640px){
+    .container{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .container{
+      width: 33.33333%;
+    }
+  }
+  
+ /* The image cards/content. The box that will contain the image, overlay and text. */
+  .content {
+    position: relative;
+    width: 60%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  /* This is the overlay colour shape and transition time */
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.8s ease-in-out 0s;
+    -moz-transition: all 0.8s ease-in-out 0s;
+    transition: all 0.8s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+    
+    
+  }
+  /* This is the overlay comment details also postion of zoom animation */
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.8s ease-in-out 0s;
+    -moz-transition: all 0.8s ease-in-out 0s;
+    transition: all 0.8s ease-in-out 0s;
+    
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+/*   
+Colour of the text on the overlay */
+  
+  .content-details p{
+    color: #fff;
+    font-size: 1em;
+  }
+
+  /* Creating the fade in direction */
+  .fadeIn-bottom{
+    top: 80%;
+  }
+  
+  /* The text attached to the bottom of each image. Can edit size and color. */
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+  }
+
