@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
   body {
-    background:white;
+    background:#595959;
     font-family: sans-serif;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
@@ -35,14 +35,14 @@
   }
  
   
-  /* These are the hyperlinks css for the nav bar - Home, about, locations and blog. Although colour change hover isnt working */
+  /* These are the hyperlinks css for the nav bar/find out more - Home, about, locations and blog. Although colour change hover isnt working */
  
   a:link {
     color: mediumspringgreen;
     text-decoration: none;
   }
   a:hover {
-    color: rgb(255, 105, 180);
+    /* color: rgb(255, 105, 180); */
     text-decoration: none;
     border: 2px solid  mediumspringgreen;
     padding: 0.3rem 0.3rem;
@@ -54,16 +54,16 @@
     text-decoration: none;
   }
   
-
 /* This is the css for H2 - the font size, colour and position */
   
   h2 {
-    color: black;
+    color: white;
     text-align: center;
     text-transform: capitalize;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 23px;
+    font-weight: bolder;
   }
 *, *:before, *:after{
     margin: 0;
@@ -82,14 +82,28 @@
     padding: 20px;
     border-radius: 20px;
   }
+
+
+
+
+
+/* Css styling/format for the images  */
+/* Css styling/format for the images  */
+/* Css styling/format for the images  */
+/* Css styling/format for the images  */
+/* Css styling/format for the images  */
+
+
+
+
+
+
   div.container {
     
         display:inline-block;
         
         
       }
- 
-  
 
  /* To help adjust the web app to suit the users screeen size */
   
@@ -111,9 +125,10 @@
     position: relative;
     width: 60%;
     max-width: 400px;
-    margin: auto;
+   
     overflow: hidden;
     border-radius: 30px;
+    margin-left: 77%;
   }
 
   /* This is the overlay colour shape and transition time */
@@ -185,7 +200,81 @@ Colour of the text on the overlay */
   div.desc {
     padding: 15px;
     text-align: center;
-    color: black;
+    color: White;
     font-size: 25px;
   }
 
+
+
+
+
+
+/* MODAL BOX CSS STYLE */
+/* MODAL BOX CSS STYLE */
+/* MODAL BOX CSS STYLE */
+/* MODAL BOX CSS STYLE */
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.myBtn:hover {opacity: 0.7;}
+.myBtn{
+
+  border-color:black;
+   color:black;
+   background-color: white;
+   font-weight: bold ;
+   margin-left: 49%;
+   padding:5px;
+   border-radius: 12px;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 
+The table inside the modal box */
+
+table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+}

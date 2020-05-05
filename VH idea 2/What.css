@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+  body {
+    background:#595959;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  /* Styling for link buttons on top right of the page. To have them in a list and also coloured overlay borders */
+  nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+     
+    float:right;
+    list-style: none;
+    display: flex;
+    color: mediumspringgreen;
+  }
+
+  li {  
+    margin-right: 3rem;
+  
+  }
+ 
+  
+  /* These are the hyperlinks css for the nav bar - Home, about, locations and blog. Although colour change hover isnt working */
+ 
+  a:link {
+    color: mediumspringgreen;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(255, 105, 180);
+    text-decoration: none;
+    border: 2px solid  mediumspringgreen;
+    padding: 0.3rem 0.3rem;
+    border-radius: 15px;
+  }
+  
+  a:visited {
+    color:  mediumspringgreen;
+    text-decoration: none;
+  }
+  
+  
+/* This is the css for the header/Van heroes header image and nav bar */
+
+  .inner, #wrap {
+    width:100%;
+    margin:auto;
+    
+    padding: 20px;
+    border-radius: 20px;
+  }
+ 
+  
+
+ /* To help adjust the web app to suit the users screeen size */
+  
+  @media screen and (max-width: 640px){
+    .container{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .container{
+      width: 33.33333%;
+    }
+  }
+  
+
+  H1{
+margin-top: 8rem;
+
+  }
+  /* .data-input{
+      
+  } */
