@@ -6,7 +6,7 @@ const vans = [
   { name: "Medium Van", image: "https://www.turner-rental.co.uk/wp-content/uploads/2018/08/Ford-Transit-Custom-Crew-Van.jpg" },
   { name: "Large Van", image: "https://advanced-driving.co.uk/wp-content/uploads/2016/03/transit-van-429x300.jpg" },
   { name: "Mini Bus/Van", image: "https://www.van-discount.co.uk/wp-content/uploads/2019/12/ford-transit-minibus.png.webp" },
-  { name: "Luton Van", image: "https://www.kendallcars.com/wp-content/uploads/2017/05/xford-transit-luton-XL.jpg.pagespeed.ic.c_2y61xBsX.webp" },
+  { name: "Luton Van", image: "https://d1ek71enupal89.cloudfront.net/images/blocks_png/FORD/TRANSIT/VAN/19ForLutWhiFR_800.jpg" },
   { name: "7.5tonne Van", image: "https://psdvehiclerental.co.uk/wp-content/uploads/2017/03/7.5-ton.png" },
 ]
 // This next section will group the images weve got above and style them into the card format
